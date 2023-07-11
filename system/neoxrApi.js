@@ -5,6 +5,7 @@ const axios = require("axios");
 const { Function, Scraper } = new (require("@neoxr/neoxr-js"))();
 
 let lol = ["BrunoSobrino", "SGWN"];
+let xzn = "Ikyskizo"
 
 // Memilih acak indeks dari array key
 let randomIndex = Math.floor(Math.random() * lol.length);
@@ -41,7 +42,7 @@ module.exports = class NeoxrApi {
 
   ig = async (url) => {
     let json = await Func.fetchJson(
-      "https://xzn.wtf/api/igdl?url=" + url + "&apikey=ikyy"
+      "https://xzn.wtf/api/igdl?url=" + url + "&apikey=Ikyskizo"
     );
     return json;
   };
@@ -83,7 +84,7 @@ module.exports = class NeoxrApi {
 
   tiktok = async (url) => {
     let json = await Func.fetchJson(
-      "https://xzn.wtf/api/tiktok?url=" + url + "&apikey=ikyy"
+      "https://xzn.wtf/api/tiktok?url=" + url + "&apikey=Ikyskizo"
     );
     return json;
   };
@@ -239,13 +240,13 @@ module.exports = class NeoxrApi {
 
   nobg = async (image) => {
     let tes = await Func.fetchJson(
-      "https://xzn.wtf/api/removebg?url=" + image + "&apikey=ikyy"
+      "https://xzn.wtf/api/removebg?url=" + image + "&apikey=Ikyskizo"
     );
     if (tes.status) {
       return "https://telegra.ph/file/bd7c397ed84a4819834f6.jpg";
     } else {
       let json =
-        "https://xzn.wtf/api/removebg?url=" + image + "&apikey=ikyy";
+        "https://xzn.wtf/api/removebg?url=" + image + "&apikey=Ikyskizo";
       return json;
     }
   };
@@ -440,7 +441,7 @@ module.exports = class NeoxrApi {
 
   ai = async (text) => {
     let json = await Func.fetchJson(
-      "https://xzn.wtf/api/openai?text=" + text + "&apikey=ikyy"
+      "https://xzn.wtf/api/openai?text=" + text + "&apikey=Ikyskizo"
     );
     return json;
   };
@@ -463,21 +464,19 @@ module.exports = class NeoxrApi {
   };
   ttsearch = async (query) => {
     const json = await Func.fetchJson(
-      "https://xzn.wtf/api/ttsearch?count=3&search=" +
-        query +
-        "&apikey=ikyy"
+      "https://xzn.wtf/api/ttsearch?search=" + query + "&apikey=" + xzn
     );
     return json;
-  };
+  }
   aiscene = async (url) => {
     const tes = await Func.fetchJson(
-      "https://xzn.wtf/api/aiscene?url=" + url + "&apikey=ikyy"
+      "https://xzn.wtf/api/aiscene?url=" + url + "&apikey=Ikyskizo"
     );
     if (tes.status) {
       return "https://telegra.ph/file/bd7c397ed84a4819834f6.jpg";
     } else {
       const json =
-        "https://xzn.wtf/api/aiscene?url=" + url + "&apikey=ikyy";
+        "https://xzn.wtf/api/aiscene?url=" + url + "&apikey=Ikyskizo";
       return json;
     }
   };
