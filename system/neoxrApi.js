@@ -4,7 +4,7 @@ const { fromBuffer } = require("file-type");
 const axios = require("axios");
 const { Function, Scraper } = new (require("@neoxr/neoxr-js"))();
 
-let lol = ["BrunoSobrino", "SGWN"];
+let lol = ["SGWN", "SGWN"];
 let xzn = "Ikyskizo"
 
 // Memilih acak indeks dari array key
